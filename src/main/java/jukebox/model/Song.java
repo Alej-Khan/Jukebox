@@ -1,5 +1,8 @@
 package jukebox.model;
 
+import java.util.ArrayList;
+import java.util.List;
+
 public abstract class Song {
 
     private String name;
@@ -12,7 +15,7 @@ public abstract class Song {
         this.autor = autor;
         this.durationSeconds = durationSeconds;
         this.genre = genre;
-        System.out.println("Nueva canción agregada: " + name + " por: " + autor);
+        System.out.println(String.format("Canción '%s' por '%s' agregada", name, autor));
     }
 
     public String getName() {
@@ -32,7 +35,14 @@ public abstract class Song {
     }
 
     public void play() {
+
         System.out.println("Reproduciendo: " + name);
+
     }
+
+    public void addSong() {
+        
+    }
+
 }
 
