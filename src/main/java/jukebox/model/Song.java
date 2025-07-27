@@ -3,14 +3,14 @@ package jukebox.model;
 import java.util.ArrayList;
 import java.util.List;
 
-public abstract class Song {
+public class Song {
 
     private String name;
     private String autor;
     private int durationSeconds;
     private Genre genre;
 
-    Song(String name, String autor, int durationSeconds, Genre genre) {
+    public Song(String name, String autor, int durationSeconds, Genre genre) {
         this.name = name;
         this.autor = autor;
         this.durationSeconds = durationSeconds;
@@ -34,15 +34,8 @@ public abstract class Song {
         return durationSeconds;
     }
 
-    public void play() {
-
-        System.out.println("Reproduciendo: " + name);
-
+    public String toString() {
+        return name;
     }
-
-    public void addSong() {
-        
-    }
-
 }
 

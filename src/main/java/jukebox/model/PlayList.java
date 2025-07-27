@@ -5,13 +5,32 @@ import java.util.List;
 
 public class PlayList {
 
-    private List<Song> allSongs = new ArrayList<>();
+    private String playListName;
+    List<Song> songs = new ArrayList<>();
 
-    public PlayList(List<Song> allSongs) {
-        this.allSongs = allSongs;
+    public PlayList(String playListName, List<Song> songs) {
+        this.playListName = playListName;
+        this.songs = songs;
     }
 
-    public List<Song> getAllSongs() {
-        return allSongs;
+    public void addSong(Song song){
+        songs.add(song);
     }
+
+    public void deleteSong(Song song) {
+        songs.remove(song);
+    }
+
+    public List<Song> getSongs() {
+        return songs;
+    }
+
+    public String getPlayListName() {
+        return playListName;
+    }
+
+    public String toString() {
+        return songs.toString();
+    }
+
 }

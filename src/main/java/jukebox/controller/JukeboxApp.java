@@ -1,12 +1,19 @@
 package jukebox.controller;
 
-import jukebox.model.Rap;
+import jukebox.model.Credit;
+import jukebox.model.Credit.*;
+import jukebox.model.Genre;
+import jukebox.model.PlayList;
 import jukebox.model.Song;
 
-public class JukeboxApp {
-    public static void main(String[] args) {
+import java.util.ArrayList;
+import java.util.List;
 
-        Song songOne = new Rap("Lose Yourself", "Eminem", 321);
-        songOne.play();
-    }
+public class JukeboxApp {
+
+    Credit credit = new Credit();
+
+
+
+
 }
